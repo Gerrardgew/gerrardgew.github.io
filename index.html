@@ -196,6 +196,13 @@
     <script>
       AOS.init();
     </script>
+    
+    <script>
+      history.scrollRestoration = "manual";
+       $(window).on('beforeunload', function(){
+   $(window).scrollTop(0);
+}); 
+</script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzTQOwFwEOIzct1k-k-ax2EgwBreQfN1mvhvcPiwb8Ir6H3bKwk-zrfIUNNVCaY7og/exec';
