@@ -6,6 +6,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>My Portfolio | Steven Gerrard</title>
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
   </head>
@@ -42,7 +45,7 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/gerrard.jpg" alt="Steven Gerrard" width="200" 
+      <img  src="img/gerrard.jpg" alt="Steven Gerrard" width="200" 
       class="rounded-circle img-thumbnail">
       <h1 class="display-4 fw-normal" style="color: white;">Steven Gerrard</h1>
       <p class="lead fw-light" style="color: white;">Middle School Student | Programmer (bukan pemain bola)</p>
@@ -59,10 +62,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5m text-center">
-          <div class="col-md-4 fs-5">
+          <div class="col-md-4 fs-5" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptas! Praesentium, numquam. Fuga ab, dicta voluptatum quia sunt adipisci reprehenderit voluptates labore, id doloribus veniam a nihil quod architecto libero cum hic amet praesentium nemo. Nostrum hic natus ipsum aliquid.</p>
           </div>
-          <div class="col-md-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate tempore itaque at sit nostrum nesciunt a ab consequuntur blanditiis molestiae praesentium, in architecto exercitationem!</div>
+          <div class="col-md-4 fs-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate tempore itaque at sit nostrum nesciunt a ab consequuntur blanditiis molestiae praesentium, in architecto exercitationem!</div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#50577A" fill-opacity="1" d="M0,192L48,186.7C96,181,192,171,288,154.7C384,139,480,117,576,117.3C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -71,7 +74,8 @@
 
     <!-- Projects -->
     <section id="projects">
-      <div class="container">
+      <div class="container" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-once="true">
         <div class="row text-center mb-3">
           <div class="col">
             <h2 class="text-white">My Projects</h2>
@@ -118,7 +122,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
               <img src="img/certificate1.png" class="card-img-top" alt="Responsive Web Design Certification">
               <div class="card-body">
                 <p class="card-text">This is my first certification which is Responsive Web Design from the freeCodeCamp website. I got this certification on October 12th, 2022 and it took me only a few weeks to get this certification.</p>
@@ -126,7 +130,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
               <img src="img/certificate2.png" class="card-img-top" alt="Javascript Algorithms and Data Structures Certification">
               <div class="card-body">
                 <p class="card-text">This is my second certification which is Javascript Algorithms and Data Structures from the freeCodeCamp website. I got this certification on October 28th, 2022 and it took me 2 months to get this certification.</p>
@@ -143,8 +147,7 @@
       <div class="container text-white">
         <div class="row text-center">
           <div class="col">
-            <h2>Contact Me</h2>
-            <h4 class="text-white-50">This form is still under development so it can't be used yet.</h4>
+            <h2>Interested? Contact me down below</h2>
           </div>
         </div>
         <div class="row justify-content-center mb-3">
@@ -188,6 +191,11 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzTQOwFwEOIzct1k-k-ax2EgwBreQfN1mvhvcPiwb8Ir6H3bKwk-zrfIUNNVCaY7og/exec';
